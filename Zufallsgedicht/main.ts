@@ -1,3 +1,5 @@
+//missing a Namespace :(
+
 let subjects: string[] = ["Harry ", "Hermine ", "Ron ", "Hagrid ", "Snape ", "Dumbledore "];
 let verbs: string[] = ["braut ", "liebt ", "studiert ", "hasst ", "zaubert ", "zerstört "];
 let objects: string[] = ["Zaubertränke", "den Grimm", "Lupin", "Hogwards", "die Karte des Rumtreibers", "Dementoren"];
@@ -14,7 +16,9 @@ function getVerse(): string {
     let index: number = 0;
     let multiplier: number = subjects.length;
     index = Math.floor(Math.random() * multiplier);
-
+    
+    //for() not necessary because you dont repeat any Code
+    //Example: storage += subjects(...); storage += verbs(...); storage += objects(...);
     for (let i: number = 0; i < 3; i++) {
         if (i == 0) {
             storage += subjects.splice(index, 1);
@@ -23,6 +27,7 @@ function getVerse(): string {
         } else if (i == 2) {
             storage += objects.splice(index, 1);
         }
+        
     }
 
     storage += " <br/>";
