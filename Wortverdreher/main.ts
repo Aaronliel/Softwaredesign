@@ -1,3 +1,6 @@
+//missing Namespace
+
+//parameter is missing a Underscore (_param)
 function reverseSentence(sentence: string): string {
     let sentence_arr: string[] = sentence.split("");
     sentence_arr.reverse()
@@ -5,6 +8,7 @@ function reverseSentence(sentence: string): string {
     return reversed_sentence;
 }
 
+//parameter is missing a Underscore (_param)
 function reverseWords(sentence: string): string {
     let sentence_arr: string[] = sentence.split(" ");
     sentence_arr.reverse();
@@ -12,6 +16,7 @@ function reverseWords(sentence: string): string {
     return reversed_words;
 }
 
+//parameter is missing a Underscore (_param)
 function reverseChars(sentence:string ): string {
     let sentence_arr: string[] = sentence.split(" ");
     let reversed_chars: string = "";
